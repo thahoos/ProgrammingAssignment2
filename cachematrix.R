@@ -1,7 +1,14 @@
 ## Functions written to fulfill Coursera R-Programming Week 3  programming assignment 
 
+## The   functions are  to produce the inverse of a matrix with taking advantage of 
+## caching and thus avoiding repeated computation. The first function creates a list 
+## containing a function to set a matrix, get a matrix, set the inverse of a matrix, 
+## and get the inverse of a matrix.
 
 
+## The  second function generates the inverse of the matrix
+## If the inverse has already been calculated  and the matrix has not changed then
+##  cacheSolve will pull the inverse from the cache
  
 
 ## matrix function to cache its inverse.
@@ -22,9 +29,7 @@ makeCacheMatrix  <- function(x =  matrix()) {   # default aurgement as matrix
 } 
 
 
-## This function generates the inverse of the matrix
-## If the inverse has already been calculated  and the matrix has not changed then
-##  cacheSolve will pull the inverse from the cache
+
 
 cacheSolve  <- function(x, ...) {
   inv  <- x$getinverse()
